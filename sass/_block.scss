@@ -1,0 +1,65 @@
+.block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 90px;
+  height: 680px;
+  //   background-color: tomato;
+  margin-right: 30px;
+  margin-left: 39px;
+  transform: rotate(-90deg);
+}
+.block2 {
+  display: flex;
+  flex-direction: column;
+  background-color: teal;
+  width: 609px;
+  height: 680px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.instagram {
+  display: block;
+  margin-left: 140px;
+  margin-right: 40px;
+  position: relative;
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 4px;
+    left: -100px;
+    bottom: 5px;
+    width: 60px;
+    background-color: #000000;
+    border-radius: 2px;
+  }
+}
+.youtube {
+  display: block;
+}
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.list {
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+}
+.list2 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.hero {
+  width: 355px;
+  height: 163px;
+}
+.list .item {
+  margin-left: 24px;
+}
