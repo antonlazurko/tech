@@ -16,6 +16,11 @@
         </div>
       </div>
       <div class="block2">
+        <div class="siema">
+          <div class="slide-one"></div>
+          <div class="slide-two"></div>
+          <div class="slide-three"></div>
+        </div>
         <div class="site-nav">
           <ul class="list">
             <li class="item">О нас</li>
@@ -29,14 +34,24 @@
           </ul>
         </div>
         <div class="hero">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <h2>qweqweqwe</h2>
+          <h1 class="main-title">A hair salon for men in Kyiv</h1>
+          <h2>BarberShop</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
-            quo.
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
           </p>
         </div>
       </div>
     </div>
+    <script src="siema.min.js"></script>
+    <script>
+      const mySiema = new Siema();
+      document
+        .querySelector('.prev')
+        .addEventListener('click', () => mySiema.prev());
+      document
+        .querySelector('.next')
+        .addEventListener('click', () => mySiema.next());
+    </script>
   </body>
 </html>
